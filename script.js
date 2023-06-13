@@ -3,5 +3,7 @@
 
 document.addEventListener("loadDom", function(){
 	 let body = document.querySelector("body");
-	body.innerHTML = "DOM load success";
+body.innerHTML = "";
+	var message = document.createTextNode("DOM load success");
+ body.appendChild(message);
 });
